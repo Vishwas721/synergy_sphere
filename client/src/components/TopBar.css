@@ -1,0 +1,114 @@
+.topbar {
+  display: flex; /* Establishes a flex container */
+  justify-content: space-between; /* This is the key: pushes children to opposite ends */
+  align-items: center; /* Vertically aligns items in the center */
+  padding: 0 25px;
+  background-color: var(--sidebar-bg);
+  border-bottom: 1px solid var(--border-color);
+  height: 65px;
+  box-sizing: border-box;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  color: var(--sidebar-text-muted);
+}
+
+.topbar-right-content {
+  display: flex; /* Makes this a flex container as well */
+  align-items: center;
+  gap: 20px; /* Space between search and icons */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.search-bar .search-icon {
+  color: var(--sidebar-text-muted);
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+  color: var(--sidebar-text);
+  font-size: 14px;
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--sidebar-text-muted);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+.icon-btn:hover {
+  color: var(--sidebar-text);
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #e53e3e;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+/* ... (existing styles) */
+
+/* New styles for breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.breadcrumb-link {
+  color: var(--sidebar-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--primary-color);
+}
+
+.breadcrumb-separator {
+  color: var(--sidebar-text-muted);
+}
+
+.breadcrumb-active {
+  color: var(--sidebar-text);
+}

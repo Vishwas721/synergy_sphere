@@ -1,0 +1,38 @@
+.settings-page {
+  padding: 20px;
+}
+
+.settings-page h1 {
+    margin-bottom: 30px;
+}
+
+.settings-card {
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+}
+
+.settings-card h2 {
+  margin-top: 0;
+}
+
+.settings-card p {
+    color: var(--sidebar-text-muted);
+}
+
+.logout-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c53030;
+}

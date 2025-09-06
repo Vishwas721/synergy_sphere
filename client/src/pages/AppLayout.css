@@ -1,0 +1,18 @@
+.app-layout {
+  display: flex;
+}
+
+.content-wrapper {
+  margin-left: 260px; /* Same as sidebar width */
+  width: calc(100% - 260px);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1; /* Takes up remaining vertical space */
+  overflow-y: auto; /* Allows content to scroll */
+  background-color: var(--main-bg);
+  padding: 20px 25px;
+}

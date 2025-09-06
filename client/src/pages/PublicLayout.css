@@ -1,0 +1,70 @@
+.public-header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(10, 10, 30, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  z-index: 100;
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-container h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.public-nav {
+  display: flex;
+  gap: 30px;
+}
+.public-nav a {
+  color: #a0aec0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.public-nav a:hover, .public-nav a.active {
+  color: #fff;
+}
+
+.public-actions {
+  display: flex;
+  gap: 15px;
+}
+.public-actions a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.login-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.signup-btn {
+  background: #5a67d8;
+  color: #fff;
+}
+.signup-btn:hover {
+  background: #4c58b8;
+}

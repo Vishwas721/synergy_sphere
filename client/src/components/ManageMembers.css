@@ -1,0 +1,54 @@
+.manage-members h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.members-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.members-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+}
+.members-list li:nth-child(odd) {
+  background-color: var(--main-bg);
+}
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--sidebar-text-muted);
+  cursor: pointer;
+}
+.remove-btn:hover {
+  color: #e53e3e;
+}
+.add-member-form {
+  display: flex;
+  gap: 10px;
+}
+.add-member-form input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.add-member-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.success-message {
+    color: #48bb78;
+    font-size: 14px;
+    margin-top: 10px;
+}
