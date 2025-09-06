@@ -1,1 +1,1 @@
-# synergy_sphere
+# synergy_sphere : Advanced Team collaboration platform
